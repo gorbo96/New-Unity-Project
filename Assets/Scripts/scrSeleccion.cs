@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class scrSeleccion : MonoBehaviour
 {
     public Button boton;
+    public Dropdown lista;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,10 @@ public class scrSeleccion : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Tab)){
-            boton.Select();
+            lista.Select();
+        }
+        if(Input.GetKeyDown(KeyCode.Return)){
+            
         }
         
     }    
